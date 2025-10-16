@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es-MX" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Psicología Positiva | Transforma tu Vida y Encuentra tu Bienestar</title>
+    <meta name="description" content="Descubre el poder de la Psicología Positiva. Terapia y herramientas para construir una vida más plena, feliz y con propósito. Agenda tu primera consulta hoy." />
+
+    <meta property="og:title" content="Psicología Positiva | Transforma tu Vida y Encuentra tu Bienestar" />
+    <meta property="og:description" content="Terapia especializada en Psicología Positiva para ayudarte a florecer, superar desafíos y construir una vida con significado. Comienza tu camino hacia el bienestar." />
+    <meta property="og:image" content="https://images.pexels.com/photos/1528640/pexels-photo-1528640.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&dpr=2" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+      }
+      /* Style for mobile menu */
+      .mobile-nav {
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+      .mobile-nav.open {
+        transform: translateX(0);
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#FFF8E1] text-[#37474F]">
+
+    <!-- Header -->
+    <header role="banner" id="main-header" class="sticky top-0 z-50 transition-all duration-300 bg-transparent">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#home" class="text-2xl font-bold text-[#4DB6AC] hover:text-[#00796B]">
+          Psic. Alberto Medina
+        </a>
+        <nav role="navigation" aria-label="Navegación principal" class="hidden md:flex">
+          <ul class="flex space-x-8">
+            <li><a href="#servicios" class="text-base text-[#37474F] hover:text-[#E57373] transition-colors">Servicios</a></li>
+            <li><a href="#quienes-somos" class="text-base text-[#37474F] hover:text-[#E57373] transition-colors">Sobre mí</a></li>
+            <li><a href="#testimonios" class="text-base text-[#37474F] hover:text-[#E57373] transition-colors">Testimonios</a></li>
+            <li><a href="#blog" class="text-base text-[#37474F] hover:text-[#E57373] transition-colors">Blog</a></li>
+            <li><a href="#contacto" class="text-base text-[#37474F] hover:text-[#E57373] transition-colors">Contacto</a></li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden text-[#37474F]" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+       <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-nav fixed top-0 right-0 h-full w-64 bg-white/90 backdrop-blur-sm shadow-lg md:hidden p-6" role="dialog" aria-modal="true">
+        <div class="flex justify-end mb-8">
+            <button id="mobile-menu-close-button" class="text-[#37474F]" aria-label="Cerrar menú de navegación">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <nav>
+            <ul class="flex flex-col space-y-6 text-center">
+                <li><a href="#servicios" class="mobile-nav-link text-lg text-[#37474F] hover:text-[#E57373]">Servicios</a></li>
+                <li><a href="#quienes-somos" class="mobile-nav-link text-lg text-[#37474F] hover:text-[#E57373]">Sobre mí</a></li>
+                <li><a href="#testimonios" class="mobile-nav-link text-lg text-[#37474F] hover:text-[#E57373]">Testimonios</a></li>
+                <li><a href="#blog" class="mobile-nav-link text-lg text-[#37474F] hover:text-[#E57373]">Blog</a></li>
+                <li><a href="#contacto" class="mobile-nav-link text-lg text-[#37474F] hover:text-[#E57373]">Contacto</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main role="main">
+      <!-- Hero Section -->
+      <section id="home" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://gifdb.com/images/high/sunrise-in-tibet-9ptkpv1ytpnaf4sj.webp')">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 p-6 text-white max-w-3xl">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+            Descubre tu Fortaleza Interior. Vive una Vida Plena.
+          </h1>
+          <p class="text-lg md:text-xl mb-8 leading-[1.8]">
+            La Psicología Positiva no solo trata lo que está mal; celebra y cultiva lo que está bien en ti. Juntos, podemos construir un camino hacia tu bienestar, desbloqueando tu potencial para una felicidad auténtica y duradera. Da el primer paso hacia una versión más resiliente y optimista de ti mismo.
+          </p>
+          <a href="https://calendly.com/zaydel-mitzay/30min" role="button" aria-label="Agendar tu primera sesión de terapia en Calendly" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#E57373] text-white font-bold tracking-wide leading-normal px-8 py-4 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-[#D32F2F] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#E57373] focus-visible:ring-offset-[#FFF8E1]">
+            Agenda tu Primera Sesión
+          </a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="quienes-somos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left">
+              <h2 class="text-3xl md:text-4xl font-bold text-[#37474F] mb-6">Un Enfoque Humano para tu Bienestar</h2>
+              <p class="text-lg mb-4 leading-[1.8]">
+                Soy el Psic. Alberto Medina, y mi pasión es guiarte en el descubrimiento de tus propias fortalezas. Con un enfoque en la Psicología Positiva, mi terapia va más allá de la simple conversación; es un espacio seguro y colaborativo donde creamos estrategias personalizadas para que alcances tus metas, cultives relaciones sanas y construyas una vida con propósito y alegría.
+              </p>
+              <p class="text-lg leading-[1.8]">
+                Creo firmemente que cada persona tiene la capacidad innata de florecer. Mi compromiso es brindarte las herramientas y el apoyo para lograrlo.
+              </p>
+            </div>
+            <div>
+              <img src="https://images.pexels.com/photos/33345072/pexels-photo-33345072.jpeg" alt="Retrato profesional del Psicólogo Alberto Medina, en traje semi-formal y sonriendo con confianza." class="rounded-lg shadow-2xl mx-auto w-full max-w-md object-cover" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="servicios" class="py-20 bg-[#FFF8E1]">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#37474F] mb-4">Transforma tu Vida, Paso a Paso</h2>
+          <p class="text-lg max-w-3xl mx-auto mb-12 leading-[1.8]">
+            Mis servicios están diseñados para darte herramientas prácticas y un apoyo significativo en tu viaje hacia el bienestar. Ya sea de forma individual o en pareja, encontraremos el camino que mejor se adapte a tus necesidades únicas, enfocándonos siempre en tus fortalezas y tu potencial de crecimiento.
+          </p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Service 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+              <div class="bg-[#4DB6AC] text-white rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Terapia Individual</h3>
+              <p class="leading-normal">Un espacio confidencial para explorar tus fortalezas, manejar el estrés y construir resiliencia. Juntos crearemos un plan personalizado para que alcances tus metas y bienestar emocional.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+              <div class="bg-[#4DB6AC] text-white rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Psicología Empresarial</h3>
+              <p class="leading-normal">Desbloquea el máximo potencial de tu equipo y empresa. Ayudamos a empleados, mandos intermedios y CEOs a mejorar la comunicación, el liderazgo y el bienestar en el entorno laboral.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+              <div class="bg-[#4DB6AC] text-white rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold mb-3">Coaching de Vida</h3>
+              <p class="leading-normal">Define tus pasiones y establece un plan de acción claro. A través del coaching, te ayudaré a superar obstáculos, mantener la motivación y diseñar una vida alineada con tus valores y propósito.</p>
+            </div>
+          </div>
+          <a href="https://calendly.com/zaydel-mitzay/30min" role="button" aria-label="Agendar una consulta de terapia en Calendly" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#E57373] text-white font-bold tracking-wide leading-normal px-8 py-4 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-[#D32F2F] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#E57373] focus-visible:ring-offset-[#FFF8E1]">
+            Agenda una Consulta
+          </a>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonios" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#37474F] mb-4">Historias de Crecimiento y Bienestar</h2>
+          <p class="text-lg max-w-3xl mx-auto mb-12 leading-[1.8]">
+            La mayor satisfacción es ser testigo de la transformación de mis pacientes. Sus historias de resiliencia y crecimiento son la prueba de que el cambio es posible. Ellos han dado el paso para construir una vida más plena y feliz, y sus experiencias son mi mayor motivación para seguir adelante.
+          </p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-[#FFF8E1] p-8 rounded-lg shadow-xl border-l-4 border-[#FFD54F]">
+              <p class="text-[#37474F] italic mb-6 leading-normal">"La terapia me ayudó a ver mis problemas desde otra perspectiva. Aprendí a valorar mis logros y a ser más amable conmigo misma. Alberto es un guía increíble, lleno de empatía y profesionalismo. ¡Totalmente recomendado!"</p>
+              <p class="font-bold text-[#4DB6AC] text-right">- Ana G.</p>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="bg-[#FFF8E1] p-8 rounded-lg shadow-xl border-l-4 border-[#FFD54F]">
+              <p class="text-[#37474F] italic mb-6 leading-normal">"Pensé que el coaching era solo para metas profesionales, pero me cambió la vida personal. Pude poner orden en mis prioridades y sentirme con más energía y propósito. Cada sesión fue un impulso de motivación y claridad."</p>
+              <p class="font-bold text-[#4DB6AC] text-right">- Carlos M.</p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="bg-[#FFF8E1] p-8 rounded-lg shadow-xl border-l-4 border-[#FFD54F]">
+              <p class="text-[#37474F] italic mb-6 leading-normal">"El coaching de Alberto fue un catalizador para nuestro equipo directivo. Nos ayudó a alinear objetivos y fomentar un liderazgo más consciente. El impacto en la cultura y productividad ha sido notable."</p>
+              <p class="font-bold text-[#4DB6AC] text-right">- Ricardo S., CEO</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Preview Section -->
+      <section id="blog" class="py-20 bg-[#FFF8E1]">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#37474F] mb-4">Mi Blog: Herramientas para tu Bienestar</h2>
+          <p class="text-lg max-w-3xl mx-auto mb-12 leading-[1.8]">
+            En este espacio comparto reflexiones, consejos y ejercicios prácticos basados en la Psicología Positiva. Mi objetivo es ofrecerte recursos valiosos que puedas aplicar en tu vida diaria para cultivar la alegría, la resiliencia y el autoconocimiento. Es una extensión de mi consultorio, abierta para ti.
+          </p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Post 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://images.pexels.com/photos/1931143/pexels-photo-1931143.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Una persona rompiendo una cadena, simbolizando la liberación de creencias limitantes." class="w-full h-48 object-cover" loading="lazy" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-3">3 Creencias que Limitan tu Crecimiento (y no son sobre dinero)</h3>
+                <p class="leading-normal mb-4">Descubre las barreras mentales que te impiden alcanzar tu potencial y aprende a superarlas para forjar un futuro próspero.</p>
+                <a href="https://youtu.be/mqI_VSB5qGk" target="_blank" rel="noopener noreferrer" class="font-bold text-[#E57373] hover:text-[#D32F2F]">Ver video &rarr;</a>
+              </div>
+            </div>
+            <!-- Post 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dos personas conversando cómodamente en una cafetería." class="w-full h-48 object-cover" loading="lazy" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-3">5 Herramientas Psicológicas para Vencer la Ansiedad Social</h3>
+                <p class="leading-normal mb-4">La ansiedad social no tiene por qué controlarte. Te comparto cinco técnicas efectivas para que ganes confianza y disfrutes más de tus interacciones sociales.</p>
+                <a href="https://youtu.be/kDFOTZ6Xr8Q" target="_blank" rel="noopener noreferrer" class="font-bold text-[#E57373] hover:text-[#D32F2F]">Ver video &rarr;</a>
+              </div>
+            </div>
+            <!-- Post 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://images.pexels.com/photos/3755824/pexels-photo-3755824.jpeg" alt="Silueta de una persona en la cima de una montaña al amanecer." class="w-full h-48 object-cover" loading="lazy" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-3">Las 3 Cualidades de una Mentalidad Imparable</h3>
+                <p class="leading-normal mb-4">Analizamos las tres cualidades clave que definen a las personas que superan cualquier obstáculo y cómo puedes cultivarlas para construir una resiliencia inquebrantable.</p>
+                <a href="https://youtu.be/zy18I8MsWWU" target="_blank" rel="noopener noreferrer" class="font-bold text-[#E57373] hover:text-[#D32F2F]">Ver video &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contacto" class="relative py-20 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/305821/pexels-photo-305821.jpeg')" aria-labelledby="contact-heading">
+        <div class="absolute inset-0 bg-white/70 backdrop-blur-sm" aria-hidden="true"></div>
+        <div class="relative container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 id="contact-heading" class="text-3xl md:text-4xl font-bold text-[#37474F] mb-4">Da el Primer Paso Hacia tu Bienestar</h2>
+            <p class="text-lg max-w-3xl mx-auto leading-[1.8]">
+              Estoy aquí para escucharte. Si tienes alguna pregunta o deseas agendar tu primera consulta, puedes rellenar el siguiente formulario y te responderé a la brevedad.
+            </p>
+            <p class="text-lg max-w-3xl mx-auto leading-[1.8] mt-4">
+              O si lo prefieres, puedes <a href="https://calendly.com/zaydel-mitzay/30min" target="_blank" rel="noopener noreferrer" class="font-bold text-[#4DB6AC] hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#4DB6AC]">agendar una cita directamente aquí</a>.
+            </p>
+          </div>
+          
+          <div class="max-w-2xl mx-auto bg-[#FFF8E1] p-8 rounded-lg shadow-2xl">
+            <form name="contact" method="POST" data-netlify="true" aria-label="Formulario de contacto">
+              <input type="hidden" name="form-name" value="contact" />
+              
+              <div class="mb-6">
+                <label for="name" class="block text-[#37474F] font-bold mb-2">Nombre Completo</label>
+                <input type="text" id="name" name="name" placeholder="Ej. Ana García" required class="w-full px-4 py-3 rounded-md bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4DB6AC]" aria-required="true" />
+              </div>
+
+              <div class="mb-6">
+                <label for="email" class="block text-[#37474F] font-bold mb-2">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Ej. ana.garcia@correo.com" required class="w-full px-4 py-3 rounded-md bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4DB6AC]" aria-required="true" />
+              </div>
+
+              <div class="mb-6">
+                <label for="message" class="block text-[#37474F] font-bold mb-2">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Cuéntame brevemente cómo puedo ayudarte..." required class="w-full px-4 py-3 rounded-md bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4DB6AC]" aria-required="true"></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="bg-[#4DB6AC] text-white font-bold px-8 py-4 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-[#00796B] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#4DB6AC] focus-visible:ring-offset-[#FFF8E1]">
+                  Enviar Mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" class="bg-[#37474F] text-white">
+      <div class="container mx-auto px-6 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+          <div class="mb-6 md:mb-0">
+            <p class="font-bold text-lg">Psic. Alberto Medina</p>
+            <p class="text-sm text-gray-400">Especialista en Psicología Positiva</p>
+          </div>
+          <div class="flex space-x-6 mb-6 md:mb-0">
+            <a href="https://www.instagram.com/alberto.medinah/" aria-label="Visita mi perfil de Instagram" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.2,5.2 0 0,1 16.2,21.4H7.8C4.6,21.4 2,18.8 2,15.2V7.8C2,4.6 4.6,2 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+            </a>
+          </div>
+          <p class="text-sm text-gray-400">
+            &copy; <span id="current-year"></span> Psic. Alberto Medina. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const header = document.getElementById('main-header');
+        if (header) {
+          window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+              header.classList.add('bg-white/90', 'shadow-md', 'backdrop-blur-sm');
+              header.classList.remove('bg-transparent');
+            } else {
+              header.classList.remove('bg-white/90', 'shadow-md', 'backdrop-blur-sm');
+              header.classList.add('bg-transparent');
+            }
+          });
+        }
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenuCloseButton = document.getElementById('mobile-menu-close-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        const openMenu = () => {
+            if (mobileMenu) {
+                mobileMenu.classList.add('open');
+                mobileMenuButton.setAttribute('aria-expanded', 'true');
+            }
+        };
+
+        const closeMenu = () => {
+            if (mobileMenu) {
+                mobileMenu.classList.remove('open');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+            }
+        };
+
+        if (mobileMenuButton && mobileMenuCloseButton && mobileNavLinks.length) {
+            mobileMenuButton.addEventListener('click', openMenu);
+            mobileMenuCloseButton.addEventListener('click', closeMenu);
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        }
+
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
+
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
